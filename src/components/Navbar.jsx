@@ -6,9 +6,10 @@ function Navbar() {
   const links = [
     { id: "home", label: "Home" },
     { id: "about", label: "About Us" },
-    { id: "track", label: "Track" },
     { id: "form", label: "Donate" },
     { id: "contact", label: "Contact" },
+    { id: "login", label: "Login" },
+    { id: "signup", label: "Signup" },
   ];
 
   return (
