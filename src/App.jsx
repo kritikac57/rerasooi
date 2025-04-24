@@ -12,20 +12,24 @@ import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <div className="flex-grow">
-        
-        <Hero />
-        <Quotes />
-        <AboutUs />
-        <FoodTracking />
-        <FoodSpecificationForm />
-        <Stats />
-      </div>
+  <div className="min-h-screen flex flex-col">
+    <Navbar />
+
+    <div className="flex-grow">
+      <div id="home"><Hero /></div>
+      <Quotes />
+      <div id="about"><AboutUs /></div>
+      <div id="track"><FoodTracking /></div>
+      <div id="form"><FoodSpecificationForm /></div>
+      <Stats />
+    </div>
+
+    <div id="contact">
       <Footer />
     </div>
-    </Router>
+  </div>
+</Router>
+
   );
 }
 
